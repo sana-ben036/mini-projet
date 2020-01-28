@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" >
   <title>Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +15,77 @@
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  <header id="first">
+    <h1><span>Reliable, efficient delivery</span></h1>
+    <h1>Powered by Technology</h1>
+    <p>
+      Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+    </p>
+  </header>
+  <!----------------------------------------------------------fin header---------------------------------------------------------------->
+  <section id="second">
+  <div class="column">
+    <div class="card" id="card1">
+      <header>
+        <h1>Supervisor</h1>
+      </header>
+      <aside>
+        <p>Monitors activity to identify project roadblocks</p>
+      </aside>
+      <footer>
+        <img src="images/icon-supervisor.svg" alt="image d'une loupe">
+      </footer>
+    </div>
+  </div>
+  <!----------------------------------------------------------fin colone1---------------------------------------------------------------->
+  <div class="column">
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <div class="card" id="card2">
+      <header>
+        <h1>Team Builder</h1>
+      </header>
+      <aside>
+        <p>Scans our talent network to create the optimal team for your project</p>
+      </aside>
+      <footer>
+        <img src="images/icon-team-builder.svg" alt="image d'acuiel">
+      </footer>
+    </div>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <div class="card" id="card3">
+      <header>
+        <h1>Karma</h1>
+      </header>
+      <aside>
+        <p>Regularly evaluates our talent to ensure quality</p>
+      </aside>
+      <footer>
+        <img src="images/icon-karma.svg" alt="image d'une lamp">
+      </footer>
+    </div>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+  </div>
+  <!----------------------------------------------------------fin colone2---------------------------------------------------------------->
+  <div class="column" ">
+   <div class="card"id="card4">
+      <header>
+        <h1>Calculator</h1>
+      </header>
+      <aside>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+      </aside>
+      <footer>
+        <img src="images/icon-calculator.svg" alt="image d'un pc">
+      </footer>
+    </div>
+  </div>  
+  <!----------------------------------------------------------fin colone3---------------------------------------------------------------->
+  </section>
   
   <footer>
     <p class="attribution">
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Sana Bengannoune</a>.
     </p>
   </footer>
 </body>
