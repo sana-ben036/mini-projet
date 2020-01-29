@@ -1,70 +1,66 @@
 html{
     background-color: gainsboro;
-    box-sizing: border-box;
 
 }
 
 body{
-    width: 90%;
-    height: 900px;
-    margin: 80px auto;
-    padding: 20px 0;
+    width: 80%;
+    height: 800px;
+    margin: 40px AUTO;
+    padding: 20px;
     background-color: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
-    font-size: 1vw;
+    font-size: 15px;
     color: hsl(234, 12%, 34%);
-    text-align: center;
-
+    text-align: center;   
 }
 p, span{color: hsl(229, 6%, 66%);}
 
-#first{
-    width: 40%;
-    margin: auto;
-
-}
-#second{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 60px auto;
-    padding: 0 60px;
-
-}
-.column{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 20px;
+section{
+    height: 550px;
+    background-color: khaki;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3%;
 }
 .card{
     background-color: white;
     width: 90%;
-    display: block; 
+    height: 235px;
     text-align: left;
     padding: 5px 20px;
-    margin-top: 25px;
     box-shadow: 2px 5px 10px hsl(229, 6%, 66%);
-
 }
 #card1{
     border-top: 5px solid hsl(180, 62%, 55%);
     border-radius: 5px;
+    grid-area: 1/1;
 }
 #card2{
     border-top: 5px solid hsl(0, 78%, 62%);
     border-radius: 5px;
+    grid-area: 1/2;
+
+
 }
 #card3{
     border-top: 5px solid hsl(34, 97%, 64%);
     border-radius: 5px;
+    grid-area: 2/2;
+
 }
 #card4{
     border-top: 5px solid hsl(212, 86%, 64%);
     border-radius: 5px;
+    grid-area: 1/3;
+    
+}
+
+#card1, #card4{
+    grid-row: 1 /span 2;
+    margin-top: 150px;
+
 }
 
 .card footer{
@@ -74,36 +70,43 @@ img{
     width: 20%;
     margin-top: 10%;
 }
-@media screen and (max-width : 700px){
-   
+
+@media screen and (max-width: 700px){
+
     body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding-top: 20px;
-        font-size: 2vw;
+        height: auto;
     }
-    #second{
-       flex-direction: column;
-       flex-wrap: wrap;
-       align-content: center;
-       margin-top: 4px;
-       width: 60%;
+  
 
+    section{
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     }
-    .column{
-        width: 90%;
-        align-items: center;
-    }
+
     .card{
-        width: 100%;
+        width: 250px;
+    
     }
-    #first{
-        justify-content: center;
-        width: 82%;
-        box-sizing: border-box;
-        padding: 0 70px;
 
-    }    
-
+    #card1{
+        grid-row: 1;
+    }
+    #card2{
+        grid-row: 2;
+    }
+    #card3{
+        grid-row: 3;
+    }
+    #card4{
+        grid-row: 4;
+    }
+         
 }
+
+
+
+
+
